@@ -144,8 +144,6 @@ Because the Palo Alto has been configured as a logging server on ISE, all accoun
 
 ![static1](/images/cisco/sda_design_1/design_16.jpg)
 
-
-
   
 
 This process can be visualized as below:
