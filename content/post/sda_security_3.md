@@ -2,7 +2,7 @@
 title: "Cisco SDA and Security Part III - micro-segmentation in SDA continued"
 date: 2022-01-12T08:14:04+05:30
 draft: false
-tags: [sda, ise, sgt. micro-segmentation]
+tags: [sda, ise, sgt, micro-segmentation]
 description:
 ---
 
