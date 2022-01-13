@@ -39,6 +39,8 @@ Three major things are pushed for the AP:
 
 We’ll take a look at each of these individually.
 
+## Policy tags
+
 A policy-tag essentially ties together a WLAN and a wireless profile policy. As we can see from the above, we have a policy-tag called ‘Test2_aninchat’ called under the AP. This is configured as follows:
 
 ```
@@ -116,6 +118,8 @@ Thus, at a high level, both the WLAN and wireless profile policy feed into the p
 
 ![static1](/images/cisco/sda_wireless_3/wireless3_1.jpg)
 
+## Site tags
+
 The site-tag is used to determine the AP profile that will be used for the APs. A quick summary of all site-tags can be seen using the following command:
 
 ```
@@ -159,6 +163,7 @@ ap profile default-ap-profile-fabric
 
 Among other things, the AP profile is where you set login information for your AP as well.
 
+## RF tags
 
 Finally, the RF tag is where you set your RF parameters. A summary of all RF tags can be seen using the following command:
 
@@ -186,6 +191,8 @@ Description          :
 2.4ghz RF Policy     : Typical_Client_Density_rf_24gh
 ```
 
+## Comparing an unprovisioned and a provisioned AP
+
 Remember, an un-provisioned AP will not have any of these configurations pushed for it on the WLC. For example, we just brought up another AP in the lab:
 
 ```
@@ -209,6 +216,8 @@ ap 380E.4D5B.0D40
 ```
 
 This is why it is very important to verify if these commands were pushed correctly on AP provision. If there is an issue here, then you can see varying problems – clients not working after connecting to this AP, clients having issues roaming to this AP and so on.
+
+## Verifying from the WLC GUI
 
 We’ve looked at all of this information via the CLI, however, for completeness sake, you can confirm the same via the GUI as follows. Login to the GUI and Configuration -> Tags will give you an overview of all tags (policy, site and rf) created for this WLC:
 
