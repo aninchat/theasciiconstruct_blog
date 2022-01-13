@@ -175,7 +175,7 @@ A DHCP offer (in the packet capture below) from the DHCP server shows the IP add
 
 ![static1](/images/cisco/sda_wireless_2/wireless2_3.jpg)
 
-## AP registration by fabric edge
+### AP registration by fabric edge
 
 Once the AP is up and starts sending some traffic, the edge will register the APs hardware mac address and IP address as EIDs to the control-plane(s): 
 
@@ -186,7 +186,7 @@ This can also be seen from the below packet captures. The first image shows the 
 ![static1](/images/cisco/sda_wireless_2/wireless2_5.jpg)
 ![static1](/images/cisco/sda_wireless_2/wireless2_6.jpg)
 
-## AP registration with WLC
+### AP registration with WLC
 
 At the same time, the AP (now with an IP address of 192.2.12.18) sends a discover to the WLC and gets a discover response. Post this, it builds a DTLS session with the controller and sends a join once the session is up. It expects to receive a join response back and once the process completes the AP is considered registered to the WLC. 
 
