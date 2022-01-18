@@ -5,6 +5,8 @@ draft: false
 tags: [cumulus, bgp]
 description: "In this post, we'll look at BGP unnumbered on Cumulus Linux."
 ---
+In this post, we'll look at BGP unnumbered on Cumulus Linux.
+<!--more-->
 
 ## Introduction
 

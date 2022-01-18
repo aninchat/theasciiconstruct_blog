@@ -1,10 +1,12 @@
 ---
 title: "SDA and Wireless Part II - AP onboarding"
-date: 2022-01-13T13:52:50+05:30
+date: 2022-01-13
 draft: false
 tags: [sda, wireless]
 description: In this post, we look at how an Access Point is onboarded in a SD-Access fabric.
 ---
+In this post, we look at how an Access Point is onboarded in a SD-Access fabric.
+<!--more-->
 
 ## Introduction and topology
 

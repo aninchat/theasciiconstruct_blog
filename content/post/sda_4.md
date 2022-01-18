@@ -5,6 +5,8 @@ draft: false
 tags: [sda, lisp]
 description: "In this post, we look at LISP dynamic EID - a core construct of LISP host mobility."
 ---
+In this post, we look at LISP dynamic EID - a core construct of LISP host mobility.
+<!--more-->
 
 ## Introduction and topology
 

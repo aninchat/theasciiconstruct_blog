@@ -3,16 +3,16 @@ title: "Cumulus Part IX - Understanding VXLAN EVPN Route-Target control"
 date: 2021-12-10T19:23:19+05:30
 draft: false
 tags: [cumulus, vxlan, evpn]
-description: "In this post, we look at how route-targets extended communities can be used to control VXLAN BGP EVPN routes in Cumulus Linux"
+description: "In this post, we look at how route-targets extended communities can be used to control VXLAN BGP EVPN routes in Cumulus Linux."
 ---
+In this post, we look at how route-targets extended communities can be used to control VXLAN BGP EVPN routes in Cumulus Linux.
+<!--more-->
 
 ## Introduction 
 
 This post assumes that the reader has a general understanding of L2/L3 VNIs and asymmetric/symmetric IRB.
 
-
 Cumulus, by default, uses auto RTs for L2 and L3 VNIs. This makes for a very easy experience (almost plug and play like) when building VXLAN BGP EVPN fabrics. But it also doesn't help you understand much of how route-targets are being imported across and how to completely control this. 
-
 
 It's always good to learn to drive a stick, before moving to an automatic. So, the goal of this blog is to help understand how L2/L3 VNI RTs are exported/imported and how you can control what goes into your customer VRF.  This will also allow you to control whether you want asymmetric or symmetric IRB (see my previous Cumulus blog posts to understand what is asymmetric and symmetric IRB).
 

@@ -5,6 +5,8 @@ draft: false
 tags: [sda, lisp]
 description: "In this post, we look at SMRs and how these are essential for a host mobility event, within the LISP architecture."
 ---
+In this post, we look at SMRs and how these are essential for a host mobility event, within the LISP architecture.
+<!--more-->
 
 ## Introduction and topology
 

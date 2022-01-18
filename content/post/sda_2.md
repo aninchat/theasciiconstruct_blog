@@ -5,6 +5,8 @@ draft: false
 tags: [sda, lisp]
 description: "In this post, we introduce basic LISP configuration and operation using packet captures and packet walks."
 ---
+In this post, we introduce basic LISP configuration and operation using packet captures and packet walks.
+<!--more-->
 
 ## Introduction and topology
 

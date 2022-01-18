@@ -3,7 +3,7 @@ title: "Junos Part I - the basics"
 date: 2021-12-31T09:07:29+05:30
 draft: true
 tags: []
-description: "In this post, we take an introductory look at the operating system used in Juniper platforms, called Junos. This post will cover basic routing, switching and the most common tools you'd want to use for troubleshooting on the platform."
+description: "In this post, we take an introductory look at the operating system used in Juniper platforms, called Junos OS. This post will cover basic routing, switching and the most common tools you'd want to use for troubleshooting on the platform."
 ---
 
 ## Introduction and topology

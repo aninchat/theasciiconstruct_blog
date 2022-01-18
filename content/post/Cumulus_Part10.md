@@ -5,11 +5,12 @@ draft: false
 tags: [cumulus, vxlan, evpn, mlag]
 description: "In this post, we take a look at the interaction of MLAG with an EVPN based VXLAN fabric on Cumulus Linux."
 ---
+In this post, we take a look at the interaction of MLAG with an EVPN based VXLAN fabric on Cumulus Linux.
+<!--more-->
 
 ## Introduction
 
 MLAG or MC-LAG (multi-chassis link aggregation) is a fairly common deployment model at the access/leaf layer of both Enterprise and Data Center networks, typically offered by most leading vendors (with different terminologies - vPC, VSS, stackwise-virtual and so on).
-
 
 The general idea is to offer redundancy at the access layer by pairing together two access/leaf switches into a common logical switch, from the perspective of any devices downstream.  Details of Cumulus' implementation can be found here. 
 

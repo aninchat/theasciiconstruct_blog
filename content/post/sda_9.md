@@ -5,6 +5,8 @@ draft: false
 tags: [sda, bgp, lisp]
 description: "In this post, we look at why SD-Access borders have the anycast IP addresses configured as loopback addresses."
 ---
+In this post, we look at why SD-Access borders have the anycast IP addresses configured as loopback addresses.
+<!--more-->
 
 ## Introduction and topology
 

@@ -1,10 +1,15 @@
 ---
-title: "SDA and Wireless Part III - understanding AP configurations on the 9800"
-date: 2022-01-13T13:52:53+05:30
-draft: false
-tags: [sda, wireless]
+title: SDA and Wireless Part III - understanding AP configurations on the 9800
 description: In this post, we look at the various access point specific configurations that are pushed to a fabric-enabled WLC.
+date: 2022-01-13
+tags: 
+    - "sda"
+    - "wireless"
 ---
+
+In this post, we look at the various access point specific configurations that are pushed to a fabric-enabled WLC.
+
+<!--more-->
 
 ## Introduction
 

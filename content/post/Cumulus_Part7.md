@@ -5,6 +5,8 @@ draft: false
 tags: [cumulus, vxlan, evpn]
 description: "In this post, we look at VXLAN routing with asymmetric IRB on Cumulus Linux."
 ---
+In this post, we look at VXLAN routing with asymmetric IRB on Cumulus Linux.
+<!--more-->
 
 ## Topology
 

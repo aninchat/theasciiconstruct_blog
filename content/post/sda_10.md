@@ -5,6 +5,8 @@ draft: false
 tags: [sda]
 description: "In this post, we take a detailed look at the L2 handoff feature in Cisco's SD-Access."
 ---
+In this post, we take a detailed look at the L2 handoff feature in Cisco's SD-Access.
+<!--more-->
 
 ## Introduction and topology
 

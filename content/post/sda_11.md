@@ -6,6 +6,8 @@ author: Aninda Chatterjee
 menu: Blog
 description: "In this post, we look at how an ARP packet flows within a SD-Access fabric."
 ---
+In this post, we look at how an ARP packet flows within a SD-Access fabric.
+<!--more-->
 
 ## Introduction and topology
 

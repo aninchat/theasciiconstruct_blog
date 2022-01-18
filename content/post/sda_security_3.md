@@ -3,8 +3,10 @@ title: "Cisco SDA and Security Part III - micro-segmentation in SDA continued"
 date: 2022-01-12T08:14:04+05:30
 draft: false
 tags: [sda, ise, sgt, micro-segmentation]
-description:
+description: In this post, we look at how SGACLs are pushed to NADs, with clear packet captures and packet walks.
 ---
+In this post, we look at how SGACLs are pushed to NADs, with clear packet captures and packet walks. We also see how SGTs are added to the VXLAN header.
+<!--more-->
 
 ## Introduction
 

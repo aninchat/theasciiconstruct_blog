@@ -3,8 +3,10 @@ title: "Cisco SDA Part VIII - DHCP challenges in SDA"
 date: 2021-12-27T18:03:49+05:30
 draft: false
 tags: [sda, lisp, dhcp]
-description: "Article Description"
+description: "In this post, we look at various DHCP challenges in Cisco's SD-Access fabric and how it is solved."
 ---
+In this post, we look at various DHCP challenges in Cisco's SD-Access fabric and how it is solved.
+<!--more-->
 
 ## Introduction and topology
 

@@ -5,6 +5,8 @@ draft: false
 tags: [sda, multicast, pim]
 description: "In this post, we look at why BSR and Auto-RP do not work with a SD-Access fabric."
 ---
+In this post, we look at why BSR and Auto-RP do not work with a SD-Access fabric.
+<!--more-->
 
 ## Introduction and topology
 

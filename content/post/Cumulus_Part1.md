@@ -1,10 +1,13 @@
 ---
 title: "Cumulus Basics Part I - navigating the OS"
-date: 2021-12-05T20:00:44+05:30
+date: 2021-12-05
 draft: false
 tags: [cumulus]
 description: "This first blog on Cumulus introduces the reader to the basics of the operating system and Cumulus' NCLU."
 ---
+This first blog on Cumulus introduces the reader to the basics of the operating system and Cumulus' NCLU.
+
+<!--more-->
 
 ## Introduction
 

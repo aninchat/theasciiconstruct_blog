@@ -3,8 +3,10 @@ title: "Cisco SDA and Security Part II - micro-segmentation in SDA"
 date: 2022-01-12T08:14:02+05:30
 draft: false
 tags: [sda, ise, sgt, cts]
-description:
+description: In this post, we look at microsegmentation in Cisco's SD-Access fabric, using SGTs.
 ---
+In this post, we look at microsegmentation in Cisco's SD-Access fabric, using SGTs.
+<!--more-->
 
 ## Introduction and topology
 

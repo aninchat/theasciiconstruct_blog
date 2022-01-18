@@ -3,8 +3,10 @@ title: "Cisco SDA design study #1 - understanding user authentication in the fab
 date: 2021-12-27T18:03:58+05:30
 draft: false
 tags: [sda, ise, aaa]
-description: "In this post, we look at how a typical user gets authenticated and authorized in a SD-Access fabric."
+description: In this post, we look at how a typical user gets authenticated and authorized in a SD-Access fabric.
 ---
+In this post, we look at how a typical user gets authenticated and authorized in a SD-Access fabric.
+<!--more-->
 
 ## Introduction and topology
 

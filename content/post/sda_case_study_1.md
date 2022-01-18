@@ -3,8 +3,10 @@ title: "Cisco SDA case study #1 - the case of the traffic that won't get denied"
 date: 2022-01-10T19:12:48+05:30
 draft: false
 tags: [sda, ise, aaa, coa]
-description: "In this post, we will look at a peculiar case of a SGACL not denying traffic between two hosts in a SD-Access fabric."
+description: In this post, we will look at a peculiar case of a SGACL not denying traffic between two hosts in a SD-Access fabric.
 ---
+In this post, we will look at a peculiar case of a SGACL not denying traffic between two hosts in a SD-Access fabric.
+<!--more-->
 
 ## Introduction and topology
 

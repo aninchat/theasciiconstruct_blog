@@ -1,10 +1,12 @@
 ---
 title: "Cumulus Bssics Part III - static routing and OSPF"
-date: 2021-12-10T19:22:38+05:30
+date: 2021-12-10
 draft: false
 tags: [cumulus, routing]
 description: "In this post, we will look at an introduction to routing on Cumulus Linux, with static routing and OSPF."
 ---
+In this post, we will look at an introduction to routing on Cumulus Linux, with static routing and OSPF.
+<!--more-->
 
 ## Introduction
 

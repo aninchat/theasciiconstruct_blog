@@ -5,6 +5,8 @@ draft: false
 tags: [cumulus, vxlan, evpn]
 description: "In this post, we introduce BGP EVPN and a VXLAN fabric in Cumulus Linux, with L2VNIs."
 ---
+In this post, we introduce BGP EVPN and a VXLAN fabric in Cumulus Linux, with L2VNIs.
+<!--more-->
 
 ## Introduction
 

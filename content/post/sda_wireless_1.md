@@ -1,10 +1,12 @@
 ---
 title: "SDA and Wireless Part I - integrating a 9800-CL WLC into SDA"
-date: 2022-01-13T13:52:48+05:30
+date: 2022-01-13
 draft: false
 tags: [sda, wireless]
 description: In this post, we look at how a 9800-CL WLC is integrated into a SD-Access fabric.
 ---
+In this post, we look at how a 9800-CL WLC is integrated into a SD-Access fabric.
+<!--more-->
 
 ## Introduction and topology
 

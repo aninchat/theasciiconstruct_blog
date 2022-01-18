@@ -3,8 +3,10 @@ title: "Cumulus Basics Part II - bridging"
 date: 2021-12-07T22:44:27+05:30
 draft: false
 tags: [cumulus]
-description: "This second blog on Cumulus looks at basic layer2 functionality in Cumulus Linux"
+description: "This second blog on Cumulus looks at basic layer2 functionality in Cumulus Linux."
 ---
+This second blog on Cumulus looks at basic layer2 functionality in Cumulus Linux.
+<!--more-->
 
 ## Introduction
 

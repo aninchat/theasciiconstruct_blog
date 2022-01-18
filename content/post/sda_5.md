@@ -5,6 +5,8 @@ draft: false
 tags: [sda, lisp]
 description: "In this post, we look at an actual LISP host mobility event and what happens behind the scenes to make this work."
 ---
+In this post, we look at an actual LISP host mobility event and what happens behind the scenes to make this work.
+<!--more-->
 
 ## Introduction and topology
 

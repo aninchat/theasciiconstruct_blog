@@ -3,8 +3,10 @@ title: "SD-Access Programmability Part I - creating a Nornir network inventory f
 date: 2021-12-29T19:38:59+05:30
 draft: false
 tags: [python, sda, nornir]
-description: "In this post, we look at how to generate a Nornir network inventory from DNA-Center, using python."
+description: In this post, we look at how to generate a Nornir network inventory from DNA-Center, using python.
 ---
+In this post, we look at how to generate a Nornir network inventory from DNA-Center, using Python.
+<!--more-->
 
 ## Introduction and topology
 
