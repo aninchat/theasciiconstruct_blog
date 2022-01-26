@@ -1,5 +1,5 @@
 ---
-title: "Cumulus Bssics Part III - static routing and OSPF"
+title: "Cumulus Basics Part III - static routing and OSPF"
 date: 2021-12-10
 draft: false
 tags: [cumulus, routing]
