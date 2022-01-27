@@ -68,7 +68,7 @@ Entering configuration mode
 
 ### Basic configuration and syntax
 
-Junos OS configuration is hierarchical. Notice the 'edit' keyword. in brackets, when you entered configuration mode above. This signifies that you are in the edit mode, which is the top most configuration hierarchy. From here, you can start configuring things in two ways:
+Junos OS configuration is hierarchical. Notice the 'edit' keyword, in brackets, when you entered configuration mode above. This signifies that you are in the edit mode, which is the top most configuration hierarchy. From here, you can start configuring things in two ways:
 
 1. You can use set commands directly from the edit mode.
 2. You can go further down the hierarchy by using additional 'edit' commands and then use 'set' commands.
@@ -151,7 +151,7 @@ The OS checks for syntax errors, and if none are found, the changes are committe
 
 1. commit check - this simply checks the configuration for synatx errors, but does not commit them.
 2. commit confirmed - have you ever locked yourself out of a device because of a change you made? More often than not? Then 'commit confirmed' is for you. This commits the changes, but starts a timer as well (default being 10 minutes) - within this time, the user is expected to 'commit' the changes again, thus confirming the commit. If the user does not commit the changes again, then the configuration is automatically rolled back.
-3. commit comment - very git like. You can commit against every commit.
+3. commit comment - very git like. You can comment against every commit.
 4. commit at - allows for commits to be scheduled.
 
 ### Change diffs and rolling back
@@ -195,7 +195,7 @@ commit complete
 root@SW2#
 ```
 
-Junos OS creates has a rolling file structure for 'rollback' files, with upto 49 rollback files being stored (0 through 49 without 0 being the active configuration itself). The first three commits are stored under /config and anything after that is stored under /var/db/config. 
+Junos OS has a rolling file structure for 'rollback' files, with upto 49 rollback files being stored (0 through 49 with 0 being the active configuration itself). The first three commits are stored under /config and anything after that is stored under /var/db/config. 
 
 You can also see the full configuration of a rollback file using 'show system rollback <number>'. Put together the 'compare' option from before, and you have a very powerful tool - you can view changes compared to an earlier version of the configuration, and combined with the rollback feature, you can roll back to it.  
 
@@ -251,7 +251,7 @@ This tells us that when we commit these changes, the '-' statements will be remo
 
 ## Basic Bridging
 
-For bridging, we'll walk through the creation of VLANs, implement and verify STP and finally configure SW1 for inter-VLAN routing using L3 interfaces for our VLANs.  
+For bridging, we'll walk through the creation of VLANs, implement and verify STP, and finally configure SW1 for inter-VLAN routing using L3 interfaces for our VLANs.  
 
 ### Craeting VLANs
 
@@ -282,9 +282,9 @@ default {
 
 ### Creating access and trunk interfaces
 
-On the Junos OS, interfaces function based on physical properties and logical properties. MTU is an example of a physical property. Logical properties fall under something called as a 'unit' - a unit can be thought of as a sub-interface (if you're from the Cisco world). However, having said that, all interfaces will have a unit (even switchports) and that doesn't mean that you've configured a sub-interface.
+On the Junos OS, interfaces function based on physical properties and logical properties. MTU is an example of a physical property. Logical properties fall under something called as a 'unit' - a unit can be thought of as a sub-interface (if you're from the Cisco world). However, having said that, all interfaces will have a unit (even switchports) - the functionality is similar to a sub-interface only when a VLAN tag is associated to it.
 
-A general schema for an interface:
+The general schema for an interface:
 
 ```
 interfaces {
@@ -299,7 +299,7 @@ interfaces {
 }
 ```
 
-'family' is a logical property and this determines the kind of interface you need - typical examples of family are:
+'family' is a logical property and this determines the kind of interface you're configuring. The various family options on the vQFX are:
 
 ```
 root@SW1# set interfaces xe-0/0/0 unit 0 family ?
@@ -350,7 +350,7 @@ root@SW4# set interfaces xe-0/0/3 unit 0 family ethernet-switching interface-mod
 
 ### Implementing and verifying STP
 
-Assuming all relevant interfaces were configured in the same way, let's jump to everyone's favorite protocol, shall we? 
+Assuming all relevant interfaces were configured in the same way on other switches, let's jump to everyone's favorite protocol, shall we? 
 
 Junos OS offers three flavors of spanning-tree that can be enabled:
 
@@ -371,7 +371,7 @@ root@SW1# set protocols rstp interface xe-0/0/1
 root@SW1# set protocols rstp interface xe-0/0/2  
 ```
 
-I also want to set SW1 as the root bridge for the network, and SW2 as a secondary root bridge. We'll adjust the bridge priority to influence the election (remember, the default priority is 32768):
+We also want to set SW1 as the root bridge for the network, and SW2 as a secondary root bridge. We'll adjust the bridge priority to influence the election (remember, the default priority is 32768):
 
 ```
 {master:0}[edit]
@@ -438,7 +438,7 @@ Enabled protocol                    : RSTP
     Extended system ID              : 0
 ```
 
-The bridge ID is not the same as the root ID, which implies that SW2 is not the root bridge for this STP instance. All non-root bridges must have a root port, which is the shortest path to the root - for SW2, this is xe-0/0/2, as seen below:
+The bridge ID is not the same as the root ID, which implies that SW2 is not the root bridge for this STP instance and the root bridge is the switch with a bridge ID of 4096.02:05:86:71:c1:02. All non-root bridges must have a root port, which is the shortest path to the root - for SW2, this is xe-0/0/2, as seen below:
 
 ```
 root@SW2> show spanning-tree interface     
@@ -456,14 +456,14 @@ This same process can be carried out for each of the switches in our network.
 
 ### Creating L3 interfaces for VLANs and inter-VLAN routing
 
-Creating SVIs or L3 interfaces for corresponding VLANs is a little different from what you'd typically be used to, if you're coming from Cisco or Arista. For example, in Cisco's IOS/IOS-XE/NX-OS, you can create the L3 interface as follows:
+Creating SVIs or L3 interfaces for corresponding VLANs is a little different from what you'd typically be used to, if you're coming from the Cisco. For example, in Cisco's IOS/IOS-XE/NX-OS, you can create the L3 interface as follows:
 
 ```
 interface vlan x
     ip address ...
 ```
 
-In Junos OS, we use irb interfaces (on the QFX platform) and vlan interface (on the EX platform) to do the same. This is not enough though - you need to map these L3 interfaces to the L2 VLAN itself. 
+In Junos OS, we use irb interface (on the QFX platform) and vlan interface (on the EX platform) to do the same. This is not enough though - you need to map these L3 interfaces to the L2 VLAN itself. 
 
 Let's create L3 interfaces for both VLAN 10 and VLAN 20 now, on SW1:
 
@@ -475,9 +475,9 @@ root@SW1# set interfaces irb unit 10 family inet address 10.1.1.1/24
 root@SW1# set interfaces irb unit 20 family inet address 20.1.1.1/24 
 ```
 
-These are created with a unit, and a family, like any other interface. A practice is to match the unit to the VLAN number itself (easy to remember it that way) and since we needed an IPv4 interface, we used the inet family here. 
+These are created with a unit, and a family, like any other interface. A good practice is to match the unit to the VLAN number itself (easy to remember it that way) and since we needed an IPv4 interface, we used the inet family here. 
 
-We can now map these to the L2 VLAN:
+We need to map these to the L2 VLAN:
 
 ```
 {master:0}[edit]
