@@ -3,13 +3,14 @@ title = "The ASCII Construct"
 languageCode = "en-us"
 paginate = "5" # Number of posts per page
 theme = "mainroad"
+googleAnalytics = "UA-139871910-1"
 
 [Author] # Used in authorbox
   name = "Aninda Chatterjee"
   bio = "Network Engineer"
 
 [Params]
-  description = "A networking blog by Aninda Chatterjee." # Site description. Used in meta description
+  description = "A networking blog." # Site description. Used in meta description
   copyright = "The ASCII Construct" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
