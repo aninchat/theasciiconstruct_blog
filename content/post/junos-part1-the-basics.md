@@ -3,9 +3,9 @@ title: "Junos Part I - the basics"
 date: 2022-01-24
 draft: true
 tags: [juniper, junos, jncia, stp]
-description: "In this post, we take an introductory look at the operating system used in Juniper platforms, called Junos OS. This post serves as an introduction to the CLI. We also cover basic bridging and routing."
+description: "In this post, we take an introductory look at the operating system used in Juniper platforms, called Junos OS. This post serves as an introduction to the CLI. We also cover basic bridging."
 ---
-In this post, we take an introductory look at the operating system used in Juniper platforms, called Junos OS. This post serves as an introduction to the CLI. We also cover basic bridging and routing.
+In this post, we take an introductory look at the operating system used in Juniper platforms, called Junos OS. This post serves as an introduction to the CLI. We also cover basic bridging.
 <!--more-->
 
 ## Introduction and topology
