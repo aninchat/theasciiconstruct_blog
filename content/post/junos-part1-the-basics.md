@@ -14,7 +14,7 @@ As a new user of the Junos OS, I thought I'd take this opportunity to blog about
 
 To that end, here's the topology that we'll be using for this post. The devices in use are Juniper Networks vQFXs.
 
-![topology](/images/juniper/junos_1/junos_basics_1.jpg)
+![topology](/images/juniper/junos_1/junos_basics_1_new.jpg)
 
 ## Navigating the CLI
 
